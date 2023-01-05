@@ -7,14 +7,6 @@ public class Team {
     public String name = "Good Team";
 
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-
     String[] teams = {"playerOne", "playerTwo", "playerThree", "playerFour"};
 
 
@@ -26,7 +18,7 @@ public class Team {
         }
     }
 
-    public void teamPlayers(){
+    public void teamPlayers() {
         System.out.println("Участиники коменды с именами: " + Arrays.toString(teams));
     }
 

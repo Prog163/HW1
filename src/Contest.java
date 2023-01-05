@@ -4,7 +4,6 @@ public class Contest extends Course{
         c.doIt();
 
         Team team = new Team();
-//        team.setName("Good Team");
         team.teamPlayers();
         team.showResults();
 
