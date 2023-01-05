@@ -5,9 +5,6 @@ import java.util.List;
 
 public class Team {
     public String name = "Good Team";
-    public String playerOne;
-    public String playerTwo;
-    public String playerThree;
 
 
 //    public void setName(String name) {
@@ -18,7 +15,7 @@ public class Team {
 //        return name;
 //    }
 
-    String[] teams = {"playerOne", "playerTwo", "playerThree"};
+    String[] teams = {"playerOne", "playerTwo", "playerThree", "playerFour"};
 
 
     public void showResults() {
