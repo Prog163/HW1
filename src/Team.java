@@ -4,18 +4,19 @@ import java.util.Collections;
 import java.util.List;
 
 public class Team {
-    public String name;
+    public String name = "Good Team";
     public String playerOne;
     public String playerTwo;
     public String playerThree;
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public String getName() {
-        return name;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
 
     String[] teams = {"playerOne", "playerTwo", "playerThree"};
 

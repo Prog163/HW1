@@ -7,6 +7,6 @@ public class Course extends Team {
 
 
     public void doIt() {
-        System.out.println("Приступить к прохождению препятствий!");
+        System.out.println(name + " - Приступить к прохождению препятствий!");
     }
 }
