@@ -19,5 +19,4 @@ public class Team {
     public void teamPlayers() {
         System.out.println("Участиники коменды с именами: " + Arrays.toString(teams));
     }
-
 }
