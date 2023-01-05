@@ -1,12 +1,9 @@
-public class Course {
+public class Course extends Team {
     public String swim;
     public String run;
     public String fight;
 
     String[] courses = {"swim", "run", "fight"};
-    for (Course c : courses){
-        c.doIt();
-    }
 
 
     public void doIt() {

@@ -1,4 +1,4 @@
-public class Contest {
+public class Contest extends Course{
     public static void main(String[] args) {
         Course c = new Course();
         c.doIt();
