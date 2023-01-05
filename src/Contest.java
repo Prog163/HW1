@@ -1,14 +1,11 @@
 public class Contest {
     public static void main(String[] args) {
         Course c = new Course();
-        c.doIt(team);
-
+        c.doIt();
 
         Team team = new Team();
-
-
-
-
+        team.setName("Good Team");
+        team.showResults();
 
     }
 }
