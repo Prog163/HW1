@@ -13,6 +13,9 @@ public class Team {
     }
 
     String[] teams = {"playerOne", "playerTwo", "playerThree"};
+    for (Team team : teams){
+        team.showResults();
+    }
 
 
     public void showResults() {

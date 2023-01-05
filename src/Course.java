@@ -4,6 +4,9 @@ public class Course {
     public String fight;
 
     String[] courses = {"swim", "run", "fight"};
+    for (Course c : courses){
+        c.doIt();
+    }
 
 
     public void doIt() {
