@@ -26,4 +26,8 @@ public class Team {
         }
     }
 
+    public void teamPlayers(){
+        System.out.println(teams);
+    }
+
 }

@@ -5,6 +5,7 @@ public class Contest extends Course{
 
         Team team = new Team();
 //        team.setName("Good Team");
+        team.teamPlayers();
         team.showResults();
 
     }
