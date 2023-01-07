@@ -1,11 +1,20 @@
-public class Course extends Team {
-    public int swim = 40;
-    public int run = 40;
-    public int fight = 20;
+public class Course{
+    public final Obstacle[] obstacles;
 
-    String[] courses = {"swim", "run", "fight"};
+    public Course(Obstacle... obstacles) {
+        this.obstacles = obstacles;
+    }
 
-    public void doIt() {
-        System.out.println(name + " - Приступить к прохождению препятствий!");
+    public void doIt(Team team){
+        for (TeamMember teamMember : team.teamMembers){
+            for(Obstacle obstacle : obstacles){
+                if (teamMember.getPower() < obstacle.getDifficulty()){
+                    System.out.println("Участник " + teamMember.getName() + " не справился с препятствием " + obstacle.getName());
+                } else {
+                    System.out.println("Участник " + teamMember.getName() + " справился с препятствием " + obstacle.getName());
+                }
+            }
+        }
+        System.out.println("Команда " + team.name + " молодцы!");
     }
 }
