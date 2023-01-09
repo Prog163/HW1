@@ -14,4 +14,15 @@ public class Team {
             System.out.println(teamMember);
         }
     }
+
+    public void showResults() {
+        for (TeamMember teamMember : teamMembers) {
+            if (teamMember.getCondition() >= teamMember.getPower()){
+                System.out.println("Участники прошедшие полосу препятствий: " + teamMember.getName() + "!");
+            } else {
+                System.out.println("Участники не прошедшие полосу препятствий: " + teamMember.getName() + "!");
+            }
+            System.out.println(teamMember);
+        }
+    }
 }
