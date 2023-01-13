@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        TeamMember one = new TeamMember("One", 1, 1);
-        TeamMember two = new TeamMember("Two", 2, 1);
-        TeamMember three = new TeamMember("Three", 3, 3);
-        TeamMember four = new TeamMember("Four", 4, 2);
+        TeamMember one = new TeamMember("One", 1, false);
+        TeamMember two = new TeamMember("Two", 2, true);
+        TeamMember three = new TeamMember("Three", 3, true);
+        TeamMember four = new TeamMember("Four", 4, true);
 
         Team team = new Team("Good team", one, two, three, four);
         team.infoAboutTeamMembers();

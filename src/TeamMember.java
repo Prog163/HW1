@@ -2,12 +2,12 @@ public class TeamMember {
 
     private final String name;
     private final int power;
-    private final int condition;
+    private final boolean obstacleCompleated;
 
-    public TeamMember(String name, int power, int condition) {
+    public TeamMember(String name, int power, boolean obstacleCompleated) {
         this.name = name;
         this.power = power;
-        this.condition = condition;
+        this.obstacleCompleated = obstacleCompleated;
     }
 
     public int getPower() {
@@ -18,8 +18,8 @@ public class TeamMember {
         return name;
     }
 
-    public int getCondition() {
-        return condition;
+    public boolean getObstacleCompleated() {
+        return obstacleCompleated;
     }
 
     @Override
