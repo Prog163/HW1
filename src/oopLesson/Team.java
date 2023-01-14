@@ -1,3 +1,5 @@
+package oopLesson;
+
 public class Team {
 
     public final String name;

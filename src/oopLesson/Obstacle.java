@@ -1,3 +1,5 @@
+package oopLesson;
+
 public class Obstacle {
     private final int difficulty;
     private final String name;
