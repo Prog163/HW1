@@ -17,10 +17,10 @@ public class Team {
 
     public void showResults() {
         for (TeamMember teamMember : teamMembers) {
-            if (teamMember.getObstacleCompleated()) {
-                System.out.println("Участники прошедшие полосу препятствий: " + teamMember.getName() + "!");
+            if (TeamMemberStatus.PassedDistance.equals(teamMember.getMemberStatus())) {
+                System.out.println("Участник: " + teamMember.getName() + " прошел полосу препятствий!");
             } else {
-                System.out.println("Участники не прошедшие полосу препятствий: " + teamMember.getName() + "!");
+                System.out.println("Участник: " + teamMember.getName() + " не прошел полосу препятствий!");
             }
             System.out.println(teamMember);
         }

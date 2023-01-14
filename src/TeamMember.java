@@ -2,12 +2,12 @@ public class TeamMember {
 
     private final String name;
     private final int power;
-    private final boolean obstacleCompleated;
 
-    public TeamMember(String name, int power, boolean obstacleCompleated) {
+    private TeamMemberStatus memberStatus = TeamMemberStatus.NoPassedDistance;
+
+    public TeamMember(String name, int power) {
         this.name = name;
         this.power = power;
-        this.obstacleCompleated = obstacleCompleated;
     }
 
     public int getPower() {
@@ -18,8 +18,12 @@ public class TeamMember {
         return name;
     }
 
-    public boolean getObstacleCompleated() {
-        return obstacleCompleated;
+    public TeamMemberStatus getMemberStatus() {
+        return memberStatus;
+    }
+
+    public void setMemberStatus(TeamMemberStatus memberStatus) {
+        this.memberStatus = memberStatus;
     }
 
     @Override
