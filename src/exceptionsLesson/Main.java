@@ -1,6 +1,7 @@
 package exceptionsLesson;
 
 import exceptionsLesson.exceptions.MyArrayDataException;
+import exceptionsLesson.exceptions.MyArraySizeException;
 
 public class Main {
 
@@ -8,7 +9,7 @@ public class Main {
         ArrayWorker arrayWorker = new ArrayWorker();
         try {
             arrayWorker.elementsOfArray();
-        } catch (MyArrayDataException e) {
+        } catch (MyArrayDataException | MyArraySizeException e) {
             e.printStackTrace();
         }
     }
