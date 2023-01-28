@@ -4,19 +4,13 @@ import exceptionsLesson.exceptions.MyArrayDataException;
 import exceptionsLesson.exceptions.MyArraySizeException;
 
 public class ArrayWorker {
-    private String[][] arrayOfStrings = new String[][]{{"1", "2", "3", "4"}, {"A", "3", "2", "1"}, {"2", "1", "1", "2"}};
+    private String[][] arrayOfStrings = new String[][]{{"1", "2", "3", "4"}, {"A", "3", "2", "1"}, {"2", "1", "1"}, {"2", "1", "1", "2"}};
 
     public void elementsOfArray() throws MyArrayDataException, MyArraySizeException {
 
-        System.out.println("Сейчас размер массива " + arrayOfStrings.length);
-        int l = arrayOfStrings.length;
-        if (l != 4) {
-            throw new MyArraySizeException("Размер должен быть равен: 4, в данный момент он равен: " + l);
-        }
-
+        checkSizeArray();
 
         int result = 0;
-
         for (int i = 0; i < arrayOfStrings.length; i++) {
             for (int j = 0; j < arrayOfStrings[i].length; j++) {
                 String currentString = arrayOfStrings[i][j];
@@ -29,5 +23,18 @@ public class ArrayWorker {
             }
         }
         System.out.println(result);
+    }
+
+    private void checkSizeArray() throws MyArraySizeException {
+        int length = arrayOfStrings.length;
+        if (length != 4) {
+            throw new MyArraySizeException("Размер должен быть равен: 4, в данный момент он равен: " + length);
+        }
+
+        for (int i = 0; i < arrayOfStrings.length; i++) {
+            int currentArrayLength = arrayOfStrings[i].length;
+            if (currentArrayLength != 4)
+                throw new MyArraySizeException("Размер должен быть равен: 4, в данный момент он равен: " + currentArrayLength);
+        }
     }
 }
