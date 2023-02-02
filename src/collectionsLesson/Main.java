@@ -13,15 +13,15 @@ public class Main {
 
     public static void allPhonebook(){
         Phonebook phonebook = new Phonebook();
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993355);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993380);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993367);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993355);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993312);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993308);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993377);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993344);
-        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993399);
+        phonebook.addNameAndPhone("Аброшкин", 89276993355);
+        phonebook.addNameAndPhone("Федосеев", 89276993380);
+        phonebook.addNameAndPhone("Заборников", 89276993367);
+        phonebook.addNameAndPhone("Семёнов", 89276993354);
+        phonebook.addNameAndPhone("Аброшкин", 89276993312);
+        phonebook.addNameAndPhone("Аброшкин", 89276993308);
+        phonebook.addNameAndPhone("Васильченко", 89276993377);
+        phonebook.addNameAndPhone("Муратьев", 89276993344);
+        phonebook.addNameAndPhone("Дудуло", 89276993399);
     }
 
 }
