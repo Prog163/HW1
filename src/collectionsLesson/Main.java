@@ -11,4 +11,17 @@ public class Main {
         return words;
     }
 
+    public static void allPhonebook(){
+        Phonebook phonebook = new Phonebook();
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993355);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993380);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993367);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993355);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993312);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993308);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993377);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993344);
+        phonebook.addNameAndPhone("Василий Иванович Аброшкин", 89276993399);
+    }
+
 }
