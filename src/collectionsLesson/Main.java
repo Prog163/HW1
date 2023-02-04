@@ -1,27 +1,28 @@
 package collectionsLesson;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
-        TenWordsArray tenWordsArray = new TenWordsArray(wordsArray());
-        tenWordsArray.uniqueWords();
+        HashMap<String, Integer> map = new HashMap<>();
+        String[] strings = new String[]{"Book", "Book", "Book", "Apple", "Head", "Phone", "Apple", "Sea", "Shark", "Mouse"};
+        for (int i = 0; i <strings.length; i++) {
+            String currentKey = strings[i];
+            Integer currentValue = map.get(currentKey);
+            if (currentValue == null) {
+                map.put(currentKey, 1);
+            } else {
+                map.put(currentKey, currentValue + 1);
+            }
+        }
+        printMap(map);
+        // TODO: Вывести в консоль уникальные слова
+}
+    public static void printMap(HashMap<String, Integer> map) {
+        for (Map.Entry pair : map.entrySet()) {
+            if(pair.getValue().equals(1))
+                System.out.println("Key: " + pair.getKey() + " | Value: " + pair.getValue());
+        }
     }
-
-    public static String [] wordsArray() {
-        String[] words = {"Book", "Book", "Book", "Apple", "Head", "Phone", "Apple", "Sea", "Shark", "Mouse"};
-        return words;
-    }
-
-//    public static void allPhonebook(){
-//        Phonebook phonebook = new Phonebook();
-//        phonebook.addNameAndPhone("Аброшкин", 89276993355);
-//        phonebook.addNameAndPhone("Федосеев", 89276993380);
-//        phonebook.addNameAndPhone("Заборников", 89276993367);
-//        phonebook.addNameAndPhone("Семёнов", 89276993354);
-//        phonebook.addNameAndPhone("Аброшкин", 89276993312);
-//        phonebook.addNameAndPhone("Аброшкин", 89276993308);
-//        phonebook.addNameAndPhone("Васильченко", 89276993377);
-//        phonebook.addNameAndPhone("Муратьев", 89276993344);
-//        phonebook.addNameAndPhone("Дудуло", 89276993399);
-//    }
-
 }
