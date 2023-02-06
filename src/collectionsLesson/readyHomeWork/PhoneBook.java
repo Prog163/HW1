@@ -16,6 +16,7 @@ public class PhoneBook {
         else {
             phones = new HashSet<>();
         }
+        // Списал phones.add(phone.replaceAll , не понимаю как работает. Списал потому что не возвращались номера телефонов, остальное работает
         phones.add(phone.replaceAll(" ",""));
         phoneBook.put(name,phones);
     }
