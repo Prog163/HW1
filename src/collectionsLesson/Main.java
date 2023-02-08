@@ -39,7 +39,7 @@ public class Main {
         phonebook.addNewStringPhoneBook("Vasya", "89276955532");
         phonebook.addNewStringPhoneBook("Anton", "89276956985");
         phonebook.addNewStringPhoneBook("Dasha", "89276957895");
-        phonebook.addNewStringPhoneBook("Vasya", "89276654123");
+        phonebook.addNewStringPhoneBook("Vasya", "89276654123"); //Vasya с другим номером
         phonebook.addNewStringPhoneBook("Sasha", "89987456321");
 
         System.out.println("Dasha: " + phonebook.getStringInPhonebook("Dasha"));
