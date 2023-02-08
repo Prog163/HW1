@@ -19,7 +19,7 @@ public class Main {
             }
         }
         printMap(map);
-        // TODO: Вывести в консоль уникальные слова
+
         System.out.println("Уникальные слова в списке: ");
         for (Map.Entry pair : map.entrySet()) {
             if (pair.getValue().equals(1)) {
@@ -40,6 +40,11 @@ public class Main {
         phonebook.addNewStringPhoneBook("Anton", "89276956985");
         phonebook.addNewStringPhoneBook("Dasha", "89276957895");
         phonebook.addNewStringPhoneBook("Vasya", "89276654123"); //Vasya с другим номером
+
+        phonebook.addNewStringPhoneBook("Vasya", "8 927 665 41 23"); //Vasya с другим номером и в другом формате
+        phonebook.addNewStringPhoneBook("Vasya", "8 927 665 4123"); //Vasya с другим номером и в другом формате
+        phonebook.addNewStringPhoneBook("Vasya", "8 9 2 7 6 6 5 4 1 2 3"); //Vasya с другим номером и в другом формате
+
         phonebook.addNewStringPhoneBook("Sasha", "89987456321");
 
         System.out.println("Dasha: " + phonebook.getStringInPhonebook("Dasha"));

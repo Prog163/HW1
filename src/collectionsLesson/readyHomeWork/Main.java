@@ -10,15 +10,15 @@ public class Main {
 
     private static void doPhoneBook() {
         PhoneBook phoneBook = new PhoneBook();
-        phoneBook.addElementPhoneBook("Shum","89670049109");
-        phoneBook.addElementPhoneBook("Shum","89670049110");
-        phoneBook.addElementPhoneBook("Shum","89670049111");
+        phoneBook.addElementPhoneBook("Shum", "89670049109");
+        phoneBook.addElementPhoneBook("Shum", "89670049110");
+        phoneBook.addElementPhoneBook("Shum", "89670049111");
 
-        phoneBook.addElementPhoneBook("Art","888888");
-        phoneBook.addElementPhoneBook("Art","888888");
-        phoneBook.addElementPhoneBook("Art","888888   ");
-        phoneBook.addElementPhoneBook("Art","888  88 8 ");
-        phoneBook.addElementPhoneBook("Art","8  8  8 888     ");
+        phoneBook.addElementPhoneBook("Art", "888888");
+        phoneBook.addElementPhoneBook("Art", "888888");
+        phoneBook.addElementPhoneBook("Art", "888888   ");
+        phoneBook.addElementPhoneBook("Art", "888  88 8 ");
+        phoneBook.addElementPhoneBook("Art", "8  8  8 888     ");
 
         System.out.println("Shum: " + phoneBook.getPhonesByName("Shum"));
         System.out.println("Art: " + phoneBook.getPhonesByName("Art"));
@@ -27,7 +27,7 @@ public class Main {
     }
 
     private static String[] createArrayWords() {
-        String [] strings = new String[10];
+        String[] strings = new String[10];
         strings[0] = "Mama";
         strings[1] = "Papa";
         strings[2] = "Puma";
