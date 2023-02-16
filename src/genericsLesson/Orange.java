@@ -1,7 +1,7 @@
 package genericsLesson;
 
 public class Orange extends Fruit {
-    public Orange () {
+    public Orange() {
         super(1.5f);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class genericsMain {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         fruitsAdd();
 
         //Написать метод, который меняет два элемента массива местами
@@ -16,7 +16,7 @@ public class genericsMain {
         System.out.println(Arrays.toString(array));
 
         //Ещё нарыл такой способ решения, через метод Collections.swap
-        ArrayList <String> arrList = new ArrayList<String>();
+        ArrayList<String> arrList = new ArrayList<String>();
         arrList.add("One");
         arrList.add("Two");
         arrList.add("Three");
@@ -28,7 +28,7 @@ public class genericsMain {
     }
 
     //Создаём и складываем фрукты в BOX
-    public static void fruitsAdd(){
+    public static void fruitsAdd() {
         Box<Apple> apple = new Box<Apple>(1);
         Box<Orange> orange = new Box<Orange>(2);
         Box<Apple> apple2 = new Box<Apple>(3);
