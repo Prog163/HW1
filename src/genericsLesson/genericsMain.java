@@ -6,6 +6,7 @@ import java.util.Collections;
 
 public class genericsMain {
     public static void main (String[] args) {
+        fruitsAdd();
 
         //Написать метод, который меняет два элемента массива местами
         String[] array = new String[]{"One", "Two"};
@@ -20,11 +21,25 @@ public class genericsMain {
         arrList.add("Two");
         arrList.add("Three");
         arrList.add("Four");
-        System.out.println(arrList);
+        System.out.println("Изначальный вид: " + arrList);
 
         Collections.swap(arrList, 1, 2);
-        System.out.println(arrList);
+        System.out.println("Замена местами : " + arrList);
     }
 
+    //Создаём и складываем фрукты в BOX
+    public static void fruitsAdd(){
+        Box<Apple> apple = new Box<Apple>(1);
+        Box<Orange> orange = new Box<Orange>(2);
+        Box<Apple> apple2 = new Box<Apple>(3);
 
+        for (int i = 0; i < 3; i++) {
+            apple.addFruit(new Apple());
+            orange.addFruit(new Orange());
+            apple2.addFruit(new Apple());
+        }
+        System.out.println(apple.getWeightInBox());
+        System.out.println(orange.getWeightInBox());
+        System.out.println(apple.compare(orange));
+    }
 }
