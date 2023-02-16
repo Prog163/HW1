@@ -24,5 +24,7 @@ public class Box<S> {
 
     public void addFruits(Box<S> box){
         fruits.addAll(box.fruits);
+        System.out.println(fruits.size());
+        System.out.println(box.fruits.size());
     }
 }

@@ -15,4 +15,12 @@ public class Fruit {
     public void setWeight(float weight) {
         this.weight = weight;
     }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
 }

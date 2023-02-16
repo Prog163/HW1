@@ -41,5 +41,7 @@ public class genericsMain {
         System.out.println(apple.getWeightInBox());
         System.out.println(orange.getWeightInBox());
         System.out.println(apple.compare(orange));
+
+        apple.addFruits(apple2);
     }
 }
