@@ -8,7 +8,7 @@ public class genericsMain {
     public static void main(String[] args) {
         fruitsAdd();
 
-        //Написать метод, который меняет два элемента массива местами
+        //TODO: Написать метод, который меняет два элемента массива местами
         String[] array = new String[]{"One", "Two"};
         String a = array[0];
         array[0] = array[1];
@@ -30,8 +30,8 @@ public class genericsMain {
     //Создаём и складываем фрукты в BOX
     public static void fruitsAdd() {
         Box<Apple> apple = new Box<Apple>(1);
-        Box<Orange> orange = new Box<Orange>(2);
-        Box<Apple> apple2 = new Box<Apple>(3);
+        Box<Orange> orange = new Box<Orange>(1.5);
+        Box<Apple> apple2 = new Box<Apple>(1);
 
         for (int i = 0; i < 3; i++) {
             apple.addFruit(new Apple());
