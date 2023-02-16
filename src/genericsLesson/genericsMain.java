@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class genericsMain {
     public static void main(String[] args) {
-        fruitsAdd();
+        fruitsAddBox();
 
         //TODO: Написать метод, который меняет два элемента массива местами
         String[] array = new String[]{"One", "Two"};
@@ -28,7 +28,7 @@ public class genericsMain {
     }
 
     //Создаём и складываем фрукты в BOX
-    public static void fruitsAdd() {
+    public static void fruitsAddBox() {
         Box<Apple> apple = new Box<Apple>(1);
         Box<Orange> orange = new Box<Orange>(1.5);
         Box<Apple> apple2 = new Box<Apple>(1);
