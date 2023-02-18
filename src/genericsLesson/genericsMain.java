@@ -1,30 +1,18 @@
 package genericsLesson;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class genericsMain {
     public static void main(String[] args) {
+        swapArrayElements(new String[]{"One", "Two"}, 0, 1);
         fruitsAddBox();
+    }
 
-        //TODO: Написать метод, который меняет два элемента массива местами
-        String[] array = new String[]{"One", "Two"};
-        String a = array[0];
-        array[0] = array[1];
-        array[1] = a;
+    public static void swapArrayElements(Object[] array, int i, int j) {
+        Object a = array[i];
+        array[i] = array[j];
+        array[j] = a;
         System.out.println(Arrays.toString(array));
-
-        //Ещё нарыл такой способ решения, через метод Collections.swap
-        ArrayList<String> arrList = new ArrayList<String>();
-        arrList.add("One");
-        arrList.add("Two");
-        arrList.add("Three");
-        arrList.add("Four");
-        System.out.println("Изначальный вид: " + arrList);
-
-        Collections.swap(arrList, 1, 2);
-        System.out.println("Замена местами : " + arrList);
     }
 
     //Создаём и складываем фрукты в BOX
