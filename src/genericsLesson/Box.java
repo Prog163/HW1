@@ -3,22 +3,18 @@ package genericsLesson;
 import java.util.ArrayList;
 
 public class Box<S extends Fruit> {
-    private final double weightFruit;
-    private ArrayList<S> fruits = new ArrayList<>();
 
-    public Box(double weightFruit) {
-        this.weightFruit = weightFruit;
-    }
+    private final ArrayList<S> fruits = new ArrayList<>();
 
     public void addFruit(S fruit) {
         fruits.add(fruit);
     }
 
     public double getWeightInBox() {
-        return fruits.size() * weightFruit;
+        S fruit = fruits.get(0);
+        return fruits.size() * fruit.getWeight();
     }
 
-    //Списал, не понимаю тему с Math.abs
     public void addFruits(Box<S> box) {
         fruits.addAll(box.fruits);
         box.fruits.clear();

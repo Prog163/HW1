@@ -17,9 +17,9 @@ public class genericsMain {
 
     //Создаём и складываем фрукты в BOX
     public static void fruitsAddBox() {
-        Box<Apple> apple = new Box<Apple>(1);
-        Box<Orange> orange = new Box<Orange>(1.5);
-        Box<Apple> apple2 = new Box<Apple>(1);
+        Box<Apple> apple = new Box<Apple>();
+        Box<Orange> orange = new Box<Orange>();
+        Box<Apple> apple2 = new Box<Apple>();
 
         for (int i = 0; i < 3; i++) {
             apple.addFruit(new Apple());
